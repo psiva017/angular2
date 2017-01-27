@@ -1,0 +1,101 @@
+/*!
+ * print.css v1.0.0
+ * http://printstylesheet.com/
+ *
+ * Copyright (c) 2011 David Bushell
+ * Dual licensed under the BSD or MIT licenses: http://printstylesheet.com/license.txt
+ 
+ * Author: David Bushell
+ * http://dbushell.com/
+ */
+
+
+/* use a media query to limit the CSS to only print devices, like a printer */
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media only print {
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+    .st-container {
+        position: relative;
+        overflow: hidden;
+    }
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .port-pad-0 {
+        padding: 0px;
+    }
+    .apprd-logo {
+        width: 150px;
+        float: right;
+    }
+    .edu-det-mrg-cm {
+        margin-bottom: 30px;
+    }
+    .heading-title {
+        color: #273236;
+        border-bottom: 1px dotted #535b5e;
+        margin-bottom: 15px;
+        /* text-transform: uppercase; */
+    }
+    .heading-title h3 {
+        color: #273236;
+    }
+    .abt-me-cnt {
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+    .panel-primary {
+        border-color: #42a5f5;
+    }
+    .panel {
+        margin-bottom: 18px;
+        background-color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+    .panel-primary> .panel-heading {
+        color: #ffffff;
+        background-color: #8C7BB5;
+        border-color: #8C7BB5;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .portfolio-log-width {
+        width: 100% !important;
+    }
+    .icon-block {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        display: inline-block;
+        font-size: 35px;
+    }
+    .bg-grey-100 {
+        background-color: #f5f5f5;
+    }
+    .port-education i {
+        margin-right: 5px;
+    }
+    .text-light {
+        color: #757575;
+    }
+    hr {
+        margin: 20px 0;
+        border: 0;
+        border-top: 1px solid #eeeeee;
+    }
+}
